@@ -1,4 +1,4 @@
-# Source of data for this project: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+# Source https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 # Fonctionnement du script
 
@@ -56,4 +56,4 @@ for (s in 1:numSubjects) {
     row = row+1
   }
 }
-write.table(result, "data_set_averages.txt")
+write.table(result, "data_set_averages.txt", row.names= FALSE )
