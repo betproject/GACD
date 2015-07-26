@@ -27,7 +27,7 @@ names(X) <- tolower(names(X))
 
 #  nommer les activités descriptives du data set
 
-activities <- read.table("activity_labels.txt")
+activities <- read.table("activity.txt")
 activities[, 2] = gsub("_", "", tolower(as.character(activities[, 2])))
 Y[,1] = activities[Y[,1], 2]
 names(Y) <- "activity"
